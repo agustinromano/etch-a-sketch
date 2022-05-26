@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap");
+
+* {
+  background-color: lightsteelblue;
+}
+
+h1 {
+  font-family: "Spline Sans Mono", monospace;
+  text-align: center;
+}
+
+.square {
+  border: 1px solid black;
+  height: 15px;
+  width: 25px;
+}
