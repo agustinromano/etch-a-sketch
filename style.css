@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans+Mono&display=swap");
 
 * {
+  font-family: "Spline Sans Mono", monospace;
   background-color: lightsteelblue;
 }
 
-h1 {
-  font-family: "Spline Sans Mono", monospace;
-  text-align: center;
+h1,
+.description,
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .draw-board {
@@ -16,7 +21,22 @@ h1 {
   display: grid;
 }
 
-.butons {
+.buttons {
+  padding: 8px;
+}
+button {
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+
+input {
+  background-color: aliceblue;
+}
+
+.footer {
   display: flex;
-  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
 }

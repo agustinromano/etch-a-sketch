@@ -41,3 +41,10 @@ function changeColor(selection) {
 function resetBoard() {
   window.location.reload();
 }
+
+function selectedButton() {
+  let selected = document.querySelector("button");
+  selected.addEventListener("click", () => {
+    selected.style.backgroundColor = "yellow";
+  });
+}
