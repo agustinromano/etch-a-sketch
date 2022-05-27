@@ -5,10 +5,24 @@
     <title>Etch-A-Sketch</title>
   </head>
   <body>
-    <h1>Etch-A-Sketch</h1>
-    <div class="grid"></div>
+    <h1>Let's Sketch!</h1>
+    <div class="container">
+      <div class="draw-board"></div>
+      <div class="buttons">
+        <button onclick="changeColor('black')">Black</button>
+        <button onclick="changeColor('random')">RGB</button>
+        <button onclick="changeColor('white')">Eraser</button>
+        <button onclick="resetBoard()">Reset</button>
+      </div>
+      <input
+        type="text"
+        placeholder="Board size"
+        value="16"
+        onchange="selectSize(this.value)"
+      />
+      <button>Set Size</button>
+    </div>
   </body>
-  <head>
-    <script src="app.js"></script>
-  </head>
+
+  <script src="app.js"></script>
 </html>
